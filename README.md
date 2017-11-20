@@ -7,4 +7,6 @@
 - npm install --save-dev webpack webpack-dev-server angular-router-loader angular2-template-loader awesome-typescript-loader html-loader raw-loader typescript del-cli
 - npm install --save-dev webpack-merge
 - npm install --save-dev html-webpack-plugin 
-
+- npm install --save @types/core-js @types/node
+- npm install --save-dev @ngtools/webpack
+- npm install --save-dev light-server
