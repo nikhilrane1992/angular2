@@ -1,13 +1,13 @@
-import { NgModule } from "@angular/core/src/metadata/ng_module";
+import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
-import { AppRoutingModule } from "./app.routing.module";
+import { AppRoutingModule } from "./app-routing.module";
 import { HomeComponent } from "./home.component";
 
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent
+        HomeComponent,
     ],
     imports: [
         BrowserModule,
@@ -18,4 +18,6 @@ import { HomeComponent } from "./home.component";
         AppComponent
     ]
 })
-export class AppModule {}
+export class AppModule {
+
+}

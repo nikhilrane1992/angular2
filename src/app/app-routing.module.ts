@@ -1,10 +1,10 @@
-import { NgModule } from "@angular/core/src/metadata/ng_module";
+import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from './home.component'
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'users', loadChildren: '.users/user.module#UserModule' }
+    { path: 'users', loadChildren: './users/users.module#UserModule' }
 ];
 
 @NgModule({

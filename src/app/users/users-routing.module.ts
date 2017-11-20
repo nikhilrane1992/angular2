@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core/src/metadata/ng_module";
+import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { UsersComponent } from "./users.component";
 
@@ -8,6 +8,6 @@ import { UsersComponent } from "./users.component";
     ],
     exports: [RouterModule]
 })
-export class UserRoutingModule(){
+export class UsersRoutingModule(){
 
 }

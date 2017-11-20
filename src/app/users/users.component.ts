@@ -1,4 +1,4 @@
-import { Component } from "@angular/core/src/metadata/directives";
+import { Component } from "@angular/core";
 
 @Component({
     templateUrl: './users.component.html',
