@@ -1,3 +1,4 @@
+var ngw = require('@ngtools/webpack');
 var commonConfig = require('./webpack.config.common')
 var path = require('path');
 
@@ -15,6 +16,10 @@ module.exports = webpackMerge(commonConfig, {
     module: {
         rules: [
             {
+                test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
+                loader: '@ngtools/webpack'
+            },
+            {
                 test:/\.ts$/,
                 use: [
                     { loader: 'awesome-typescript-loader' },
@@ -25,6 +30,10 @@ module.exports = webpackMerge(commonConfig, {
         ]
     },
     plugins: [
+        new ngw.AngularCompilerPlugin({
+            tsConfigPath: './tsconfig.aot.json',
+            entryModule: './src/app/app.module#AppModule'
+        }),
         new webpack.optimize.UglifyJsPlugin()
     ]
 })
