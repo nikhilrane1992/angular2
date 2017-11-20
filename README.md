@@ -10,3 +10,4 @@
 - npm install --save @types/core-js @types/node
 - npm install --save-dev @ngtools/webpack
 - npm install --save-dev light-server
+- npm install --save-dev light-server
