@@ -1,1 +1,10 @@
-<h1>Users Component</h1>
+<div class="container">
+    <div class="row">
+            <div class="col-md-2">
+                   <button class="btn btn-success btn-block" (click)="getData()">Get Data</button> 
+                </div>
+        <div class="col-md-10">
+                <user-item *ngFor="let user of users" [user]="user"></user-item>
+        </div>
+    </div>
+</div>
