@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div role="form" class="col-md-9 go-right">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" [(ngModel)]="todoObj.name" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Image Url</label>
+                    <input type="text" [(ngModel)]="todoObj.img" class="form-control" placeholder="Image">
+                </div>
+                <div class="form-group">
+                    <label for="name">Description</label>
+                    <textarea type="text" [(ngModel)]="todoObj.description" class="form-control" placeholder="Description" rows="5"></textarea> 
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" (click)="addToList()">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <todo-list [todoList]="todoList"></todo-list>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            
+        </div>  
+    </div>
+</div>
